@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Trabalhando com formulários</h1>
+    <form>
+        Nome: <input type="text" required> <br>
+        Senha: <input type="password" maxlength="8" size="5" required> <br>
+        <button>Login</button>
+    </form>
+    <hr>
+
+    <form>
+        <label for="nomedapessoa">Name:</label>
+        <input type="text" required name="nomedapessoa" id="nomedapessoa"><br>
+        <label for="emaildapessoa">E-mail:</label>
+        <input type="email" required name="emaildapessoa" id="emaildapessoa"><br>
+        <label for="idadedapessoa">Idade:</label>
+        <input type="number" min="15" max="99" name="idadedapessoa" id="idadedapessoa">
+        <br>
+        <button type="submit">Salvar</button>
+        <button type="reset">Limpar</button>
+    </form>
+    <hr>
+    <form>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+        <input type="email" name="email" id="email" placeholder="usuario@site.com"><br>
+        Deseja reclamar?
+        <input type="radio" name="reclamar" value="S">Sim
+        <input type="radio" name="reclamar" value="N">Não
+        <br>
+        <textarea name="reclamacao" placeholder="Reclame aqui" rows="5" cols="30"></textarea><br>
+        <button type="submit">SALVAR</button>
+    </form>
+    <form>
+        Sua cor favorita?
+        <input type="color" name="cor" id="cor"<br>
+        Data de nascimento:
+        <input type="date" name="data" id="data"><br>
+        Esporte favorito:
+        <input type="checkbox" value="fut" name="fut">Futebol
+        <input type="checkbox" value="vol" name="vol">Volei
+        <input type="checkbox" value="bas" name="bas">Basquete
+        <br>
+        O livro está sobre
+        <select name="livro" id="livro">
+            <option value="a mesa">A MESA</option>
+            <option value="a churrasqueira">A CHURRASQUEIRA</option>
+            <option value="a cadeira">A CADEIRA</option>
+            <option value="que livro?">QUE LIVRO</option>
+        </select> 
+    </form>
+
+</body>
+</html>
